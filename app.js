@@ -147,6 +147,29 @@ function makeFooter(){
 }
 makeFooter();
 
+//...................................FORM.........................
+let shopform = document.getElementById('shopform');
+shopform.addEventListener('submit', submitter);
+
+function submitter(event) {
+    event.preventDefault();
+    // console.log('hi', event);
+    table.deleteRow(table.rows.length - 1);
+
+    let name = event.target.shopName.value;
+    // console.log(name);
+    let min = event.target.minCustomers.value;
+    // console.log(min);
+    let max = event.target.maxCustomers.value;
+    // console.log(max);
+    let avg = event.target.avgCookies.value;
+    // console.log(avg);    
+    let addShop = new Location(name, min, max, avg);
+    addShop.calCustomersEachHour();
+    addShop.calCookiesEachHour();
+    addShop.render();
+    makeFooter();
+}
 
 
 
