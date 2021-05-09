@@ -36,7 +36,7 @@ Location.prototype.calCookiesEachHour = function() {
      // total cookies
      this.totalCookiesPerDay += this.cookiesEachHour[i]
     }
-    //console.log(this.cookiesEachHour);
+    console.log(this.cookiesEachHour);
 
 }
 
@@ -49,11 +49,11 @@ let lima = new Location('Lima', 2, 16, 4.6);
 //seattle.calCustomersEachHour();
 //seattle.calCookiesEachHour();
 
-//Call all location without repeat above step
-for (let i = 0; i < shop.length; i++) {
-shop[i].calCustomersEachHour();
-shop[i].calCookiesEachHour();    
-}
+// Call all location without repeat above step
+// for (let i = 0; i < shop.length; i++) {
+// shop[i].calCustomersEachHour();
+// shop[i].calCookiesEachHour();    
+// }
 
 console.log(shop);
 
@@ -126,7 +126,7 @@ function makeFooter(){
     let footerTh=document.createElement('th');
     footerRaw.appendChild(footerTh);
     footerTh.textContent = 'total';
-
+    
     for (let i = 0; i < hours.length; i++) {
         let totalEachHour =0;
         for (let j = 0; j < shop.length; j++) {              //=======> nest for loop i for hours and j for shops ////    total = shop[j].cookies[i]
@@ -136,16 +136,24 @@ function makeFooter(){
             // console.log(totalEachHour);
 
         }
-        console.log(totalEachHour);     //========> out for loop to see only + output
+        //console.log(totalEachHour);     //========> out for loop to see only + output
 
         let footerThTotal=document.createElement('th');
         footerRaw.appendChild(footerThTotal);
         footerThTotal.textContent = totalEachHour;
-
+    }
+    let totaloftotal = 0
+    for (let i = 0; i < shop.length; i++) {
+        totaloftotal += shop[i].totalCookiesPerDay;
     }
 
-}
-makeFooter();
+        
+    let footerLastTh = document.createElement('th');
+    footerRaw.appendChild(footerLastTh);
+    footerLastTh.textContent = totaloftotal;
+    }
+
+    makeFooter();
 
 //...................................FORM.........................
 let shopform = document.getElementById('shopform');
@@ -169,6 +177,8 @@ function submitter(event) {
     addShop.calCookiesEachHour();
     addShop.render();
     makeFooter();
+    shop.push(addShop);
+
 }
 
 
