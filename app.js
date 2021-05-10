@@ -178,7 +178,8 @@ function submitter(event) {
     addShop.render();
     makeFooter();
     shop.push(addShop);
-
+   
+    document.getElementById('shopform').reset();
 }
 
 
