@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #955C19;
+}
+header {
+    width: 100%;
+    background-color: #BC741F;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+    color: cornsilk;
+}
+header img{
+    margin-left: 35px;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+nav{
+    display: inline;
+    float: right;
+    text-align: center;
+    margin-right: 250px;
+}
+li{
+    margin-right: 60px;
+    display: inline;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 200px;
+    padding: 30px;
+}
+
+main{
+    width: 80%;
+    height: 1450px;
+    margin: auto;
+    margin-top: 30px;
+    background-color:#FF9D2B ;
+}
+main img{
+    background-color: #FF9D2b;
+    margin-left: 55px;
+}
+.image1{
+    float: right;
+    margin-right: 52px;
+    margin-top: 30px;
+}
+.p1{
+    float: none;
+margin-right: 52px;
+margin-top: 30px;
+margin-left: 52px;
+overflow-y: scroll;
+}
+.image2{
+    display: inline-block;
+    float: left;
+    margin-top: 110px;
+}
+.p2{
+   float: none;
+   margin-top: 130px;
+   margin-right: 52px;
+   margin-left: 300px;
+   overflow-y: scroll;
+   
+}
+.image3{
+    display: inline-block;
+    float: right;
+    margin-top: 110px;
+    margin-right: 52px;
+}
+.p3{
+    float: none;
+margin-top: 130px;
+margin-left: 52px;
+overflow-y: scroll;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #BC741F;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+footer div{
+    width: calc(100%/3 - 30px);
+    margin-left: 30px;
+}
+.location{
+    position: relative;
+    float: left;
+    color: cornsilk;
+}
+.location a{
+    margin-left: 150px;
+}
+.hours{
+    float: left;
+}
+.hours p{
+    color: #000;
+}
+.contact{
+    float: left;
+    margin-left: 20px;
+}
+.hours h2{
+    color: cornsilk;
+}
+.contact h2{
+    color: cornsilk;
+}
+.contact a{
+    margin-left: 130px;
+}
+.right{
+    padding-top: 160px;
+}
+.home{
+    text-align: center;
+    font-weight: bolder;
+    font-size:larger;
+    padding-bottom: 20px;
+}
+footer p {
+    text-align: center;
+    color: white;
+  }
+label{
+    font-weight: bolder;
+}
+input{
+    background-color: #FF9D2B;
+}
+
+
+
+table th ,tr ,td   {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 4px;
+    color: #382929;
+    font-weight: bolder;
+  }
+  
+  
+  #parent{
+    background-image: url('https://static2.bigstockphoto.com/6/8/1/large1500/186993307.jpg');
+    width: auto;
+    height: 300px;
+    margin: 40px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #parent  section h1 ,h2{
+    color: white;
+    text-align: center;
+  }
+  #parent section h2 {
+    font-size: medium;
+    font-weight: 300;
+  }
+  

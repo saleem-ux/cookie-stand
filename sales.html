@@ -6,10 +6,78 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Sales Data</h1>
-<div id="parent"></div>
+    <header>
+        <div class="home">
+        <h1>Welcome to Sales Data Page</h1>
+            <a href="index.html">home</a>
+        </div> 
 
-<script src="app.js"></script>
+    </header>
+    <h2>This form will help you to create new data for a new store</h2>
+  
+         <!--Create Form--> 
+        <form id="shopform">
+            <fieldset>
+                <label for="shopName">Shope Name</label>
+                <input type="text" name="shopName" id="shopName" required>
+                <br> 
+                <br><!-- to make each one in row-->
+                <label for="minCustomers">Min.Customers Number</label>
+                <input type="number" name="minCustomers" id="minCustomers" required>
+                <br>
+                <br>
+                <label for="maxCustomers">Max.Customers Number</label>
+                <input type="number" name="maxCustomers" id="maxCustomers"  required placeholder="max is greater than min">
+                <br>
+                <br>
+                <label for="avgCookies">Avg.Cookies Number</label>
+                <input type="number" step="any"  name="avgCookies" id="avgCookies" required >
+                <br>
+                <br>
+                <div class="sub">
+                    
+                    <input type="submit" value="submit" >
+                </div>
+            </fieldset>
+        </form>
+        <div id="parent"></div>
+    </main>
+    <footer>
+        <div class="location">
+         <h2>Locations</h2>
+           <a href="#">Seattle</a>
+           <br>
+           <a href="#">Tokyo</a>
+           <br>
+           <a href="#">Paris</a>
+           <br>
+           <a href="#">Dubai</a>
+           <br>
+           <a href="#">Lima</a>
+        </div>
+        <div class="hours">
+          <h2>Open Hours</h2>
+          <p>We are avaiable from 6 AM to 7 PM</p>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+            <a href="#">Facebook</a>
+            <br>
+            <a>Phone No: 0799283831</a>
+            <br>
+            <a href="#">Saleem_diab86@yahoo.com</a>
+        </div>
+        <div class="right">
+         <p> &copy;Salmon Cookies 2021 </p>
+ 
+        </div>
+      </footer>
+ 
+
+
+   
     
+
+    <script src="app.js"></script>
 </body>
 </html>
