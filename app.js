@@ -6,6 +6,7 @@ let shop = [];
 function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
+    
 
 function Location(site, minCustomers, maxCustomers, avgCookies) {
     this.site = site;
